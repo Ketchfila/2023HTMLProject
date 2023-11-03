@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <style>
+    .container{
+      width: 1200px;
+      margin:auto;
+    }
+
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li{
+      float: left;
+      /* barrier between links option */
+      border-right: 1px solid white;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 14px 16px;
+
+    }
+
+    li a:hover{
+      background-color: #111;
+    }
+    /* Optional Active Class for Awesom Navs */
+    .active{
+      background-color: darkgreen;
+    }
+
+    .advertise{
+      float: right;
+      background-color: red;
+    }
+
+    .dropdown{
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn{
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      margin: 0;
+      font-family: inherit;
+    }
+    .dropdown-content{
+      display:none;
+      z-index: 1;
+      box-shadow: 0px 14px 16px 8px rgba(0,0,0 0.2);
+      background-color: white;
+      position: absolute;
+
+    }
+
+    .dropdown-content a{
+      float: none;
+      color: black;
+      padding: 14px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content a:hover{
+      background-color: #ddd;
+
+    }
+    .dropdown:hover .dropdown-content{
+      display: block;
+
+    }
+
+
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <ul>
+    <!-- The current page gets the active class -->
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">Who We Are</a></li>
+    <li>
+      <div class="dropdown"><img src="img/Lax.png">
+        <button class="dropbtn">Club Teams(NJ)<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </li>
+    <li><a href="#">College Shirts</a></li>
+    <li><a href="#">College Hats</a></li>
+    <li><a href="#">College Cleats</a></li>
+    <li class="advertise"><a href="#">Contact Us</a></li>
+  </ul>
+
+  <br />
+  <br />
+  <!-- <ul>
+      <li><a href="http://www.google.com">Gooogle</a></li>
+  </ul> -->
+</div>
+
+
+<!-- Here lies the ISSUE with code dropping down/work on other things...-->
+
+
+<!-- <style>
+  .cardHolder{
+    width: 400px;
+    height: 380px;
+    background-color: white;
+    float: left;
+  }
+
+  .card{
+    margin:auto;
+    height: 65px;
+    width: 390px;
+    background-color: grey;
+
+    margin: 10px 5px 0px 5px;
+  }
+
+  .container{
+    width: 100px;
+  }
+</style>
+
+
+
+
+
+</head>
+<body>
+
+
+<div style="width: 1500px; background-color:grey; margin: auto;">
+
+header needs color
+
+<div class="container">
+
+
+  <div class="cardHolder">
+    <div class="card"> A card</div>
+    <div class="card"> B card</div>
+    <div class="card"> C card</div>
+    <div class="card"> D card</div>
+    <div class="card"> E card</div>
+
+  </div>
+
+
+  <div style="background-color: orange; width:1100px; height:750px;">My secondary text</div>
+
+</div>
+
+-->
+
+</body>
+</html>
